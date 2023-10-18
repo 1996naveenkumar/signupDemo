@@ -13,6 +13,14 @@
 		D20BA59529F51C9A00A34430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20BA59329F51C9A00A34430 /* Main.storyboard */; };
 		D20BA59729F51C9B00A34430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20BA59629F51C9B00A34430 /* Assets.xcassets */; };
 		D20BA59A29F51C9B00A34430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20BA59829F51C9B00A34430 /* LaunchScreen.storyboard */; };
+		D20BA5A229F533A800A34430 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20BA5A129F533A800A34430 /* SignUpVC.swift */; };
+		D264B51A2AB554B400683520 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D264B5182AB554B400683520 /* Model.xcdatamodeld */; };
+		D264B56B2AB592E100683520 /* EmployeeStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264B56A2AB592E100683520 /* EmployeeStatusVC.swift */; };
+		D264B56D2AB59B2400683520 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264B56C2AB59B2400683520 /* DataTableViewCell.swift */; };
+		D28E8BBB2ADF96EE00B01A77 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = D28E8BBA2ADF96EE00B01A77 /* GoogleService-Info (1).plist */; };
+		D28EE00E29F68B3D0069356C /* EmployeeProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28EE00D29F68B3D0069356C /* EmployeeProfileVC.swift */; };
+		D2AFF6B72ABC012800FA4429 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFF6B62ABC012800FA4429 /* UserModel.swift */; };
+		D2AFF6B92ABC015B00FA4429 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFF6B82ABC015B00FA4429 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		D20BA59629F51C9B00A34430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20BA59929F51C9B00A34430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D20BA59B29F51C9B00A34430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20BA5A129F533A800A34430 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D264B5192AB554B400683520 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D264B56A2AB592E100683520 /* EmployeeStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeStatusVC.swift; sourceTree = "<group>"; };
+		D264B56C2AB59B2400683520 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		D28E8BBA2ADF96EE00B01A77 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		D28EE00D29F68B3D0069356C /* EmployeeProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeProfileVC.swift; sourceTree = "<group>"; };
+		D2AFF6B62ABC012800FA4429 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D2AFF6B82ABC015B00FA4429 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		D20BA58C29F51C9A00A34430 /* signupDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D20BA58D29F51C9A00A34430 /* AppDelegate.swift */,
-				D20BA58F29F51C9A00A34430 /* SceneDelegate.swift */,
-				D20BA59129F51C9A00A34430 /* ViewController.swift */,
-				D20BA59329F51C9A00A34430 /* Main.storyboard */,
+				D20BA5A729F5345D00A34430 /* Delegates */,
+				D20BA5A329F5342000A34430 /* MVC */,
+				D2AFF6B42ABC00F300FA4429 /* Database */,
 				D20BA59629F51C9B00A34430 /* Assets.xcassets */,
-				D20BA59829F51C9B00A34430 /* LaunchScreen.storyboard */,
 				D20BA59B29F51C9B00A34430 /* Info.plist */,
+				D28E8BBA2ADF96EE00B01A77 /* GoogleService-Info (1).plist */,
 			);
 			path = signupDemo;
+			sourceTree = "<group>";
+		};
+		D20BA5A329F5342000A34430 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				D20BA5A429F5342A00A34430 /* Model */,
+				D20BA5A529F5343400A34430 /* View */,
+				D20BA5A629F5343D00A34430 /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		D20BA5A429F5342A00A34430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2AFF6B62ABC012800FA4429 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D20BA5A529F5343400A34430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D20BA59329F51C9A00A34430 /* Main.storyboard */,
+				D20BA59829F51C9B00A34430 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D20BA5A629F5343D00A34430 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D20BA59129F51C9A00A34430 /* ViewController.swift */,
+				D20BA5A129F533A800A34430 /* SignUpVC.swift */,
+				D264B56A2AB592E100683520 /* EmployeeStatusVC.swift */,
+				D264B56E2AB59EA700683520 /* TableViewCell */,
+				D28EE00D29F68B3D0069356C /* EmployeeProfileVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D20BA5A729F5345D00A34430 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D20BA58D29F51C9A00A34430 /* AppDelegate.swift */,
+				D20BA58F29F51C9A00A34430 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D264B56E2AB59EA700683520 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D264B56C2AB59B2400683520 /* DataTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D2AFF6B42ABC00F300FA4429 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D264B5182AB554B400683520 /* Model.xcdatamodeld */,
+				D2AFF6B82ABC015B00FA4429 /* DatabaseManager.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +208,7 @@
 				D20BA59A29F51C9B00A34430 /* LaunchScreen.storyboard in Resources */,
 				D20BA59729F51C9B00A34430 /* Assets.xcassets in Resources */,
 				D20BA59529F51C9A00A34430 /* Main.storyboard in Resources */,
+				D28E8BBB2ADF96EE00B01A77 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20BA5A229F533A800A34430 /* SignUpVC.swift in Sources */,
 				D20BA59229F51C9A00A34430 /* ViewController.swift in Sources */,
+				D2AFF6B92ABC015B00FA4429 /* DatabaseManager.swift in Sources */,
+				D28EE00E29F68B3D0069356C /* EmployeeProfileVC.swift in Sources */,
 				D20BA58E29F51C9A00A34430 /* AppDelegate.swift in Sources */,
+				D264B56B2AB592E100683520 /* EmployeeStatusVC.swift in Sources */,
 				D20BA59029F51C9A00A34430 /* SceneDelegate.swift in Sources */,
+				D264B51A2AB554B400683520 /* Model.xcdatamodeld in Sources */,
+				D2AFF6B72ABC012800FA4429 /* UserModel.swift in Sources */,
+				D264B56D2AB59B2400683520 /* DataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +389,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = naveen.signupDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +419,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = naveen.signupDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,6 +450,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D264B5182AB554B400683520 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D264B5192AB554B400683520 /* Model.xcdatamodel */,
+			);
+			currentVersion = D264B5192AB554B400683520 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D20BA58229F51C9A00A34430 /* Project object */;
 }

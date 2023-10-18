@@ -17,6 +17,12 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
+					<key>Privacy — Camera Usage Description</key>
+					<string>$(PRODUCT_NAME) would like to access your camera</string>
+					<key>Privacy — Photo Library Usage Description
+
+</key>
+					<string>$(PRODUCT_NAME) would like to access your photo</string>
 				</dict>
 			</array>
 		</dict>
